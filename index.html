@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Examples</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul id="ddmenu">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a>
+                    <ul>
+                        <li><a href="#">Місія</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Історія</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Продукти</a>
+                    <ul>
+                        <li><a href="#">Логотипи</a></li>
+                        <li><a href="#">Шаблони</a></li>
+                        <li><a href="#">Іконки</a></li>
+                        <li><a href="#">Плагіни jQuery</a></li>
+                        <li><a href="#">Маркетинг в Інтернеті</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Інтернаціоналізація</a>
+                    <ul>
+                        <li><a href="#">Китай</a></li>
+                        <li><a href="#">Японія</a></li>
+                        <li><a href="#">Канада</a></li>
+                        <li><a href="#">Австралія</a></li>
+                        <li><a href="#">Південна Америка</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </nav>
+        <div id="block-for-slider">
+            <div id="viewport">
+                <ul id="slidewrapper">
+                    <li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg"
+                            alt="1" class="slide-img"></li>
+                    <li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg"
+                            alt="2" class="slide-img"></li>
+                    <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg"
+                            alt="3" class="slide-img"></li>
+                    <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg"
+                            alt="4" class="slide-img"></li>
+                </ul>
+
+                <div id="prev-next-btns">
+                    <div id="prev-btn"></div>
+                    <div id="next-btn"></div>
+                </div>
+
+                <ul id="nav-btns">
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Календарь</h2>
+
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th>Вс</th>
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th>Сб</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

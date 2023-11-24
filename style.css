@@ -1,0 +1,461 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 101%;
+}
+
+body {
+    background: #eaeaea url('images/bg.png');
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: Arial, Tahoma, sans-serif;
+    padding-bottom: 60px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#block-for-slider {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    -o-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+}
+
+#slidewrapper,
+#slidewrapper ul,
+#slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+
+#ddmenu {
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(20, 20, 20, 0.2);
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: #8aa8bd;
+}
+
+#ddmenu li {
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 1.45em;
+    text-shadow: 1px 1px 0 #fff;
+    border-right: 1px solid #dae0e5;
+}
+
+#ddmenu li a {
+    display: block;
+    float: left;
+    padding: 0 12px;
+    line-height: 78px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6c87c0;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#ddmenu li:hover>a {
+    color: #7180a0;
+    background: #d9e2ee;
+}
+
+#ddmenu ul {
+    position: absolute;
+    top: 88px;
+    width: 130px;
+    background: #fff;
+    display: none;
+    margin: 0;
+    padding: 7px 0;
+    list-style: none;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#ddmenu ul:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 8px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: #fff transparent;
+}
+
+#ddmenu ul:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 4px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+#ddmenu ul li {
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+#ddmenu ul li a {
+    display: block;
+    width: 100%;
+    padding: 6px 7px;
+    line-height: 1.4em;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#ddmenu ul li a:hover {
+    background: #e9edf3;
+}
+
+#large {
+
+    width: 350px;
+
+    height: 350px;
+
+    float: left;
+
+    margin-top: 50px;
+
+    margin-left: 50px;
+
+    background: url(example/indicato.gif) no-repeat 50% 40%;
+
+}
+
+#large img {
+
+    width: 350px;
+
+    height: 263px;
+
+    border: 5px solid #223348;
+
+}
+
+#thumbnail {
+
+    width: 210px;
+
+    height: 256px;
+
+    overflow: auto;
+
+    float: left;
+
+    list-style: none;
+
+    margin-top: 50px;
+
+    margin-left: 16px;
+
+    _margin-left: 8px;
+
+    padding: 5px;
+
+    border: 3px solid #223348;
+
+    background: #fff;
+
+}
+
+#thumbnail li {
+
+    float: left;
+
+    width: 79px;
+
+    margin: 8px;
+
+    _margin: 5px;
+
+}
+
+#thumbnail a {
+
+    display: block;
+
+    width: 75px;
+
+    height: 56px;
+
+    padding: 1px;
+
+    border: 1px solid #ccc;
+
+}
+
+#thumbnail a:hover {
+
+    border-color: #405061;
+
+}
+
+#calendar {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#calendar th,
+#calendar td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#calendar th {
+    background-color: #f2f2f2;
+}
+
+#calendar td:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
